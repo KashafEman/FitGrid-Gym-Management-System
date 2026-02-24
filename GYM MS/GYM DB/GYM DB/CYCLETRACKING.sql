@@ -1,0 +1,10 @@
+CREATE DATABASE CYCLETRACKING;
+
+CREATE TABLE CycleTracking(
+CycleID INT PRIMARY KEY,
+CycleStartDate DATE,
+CycleEndDate DATE,
+CycleLength INT
+);
+
+SELECT * FROM CycleTracking;

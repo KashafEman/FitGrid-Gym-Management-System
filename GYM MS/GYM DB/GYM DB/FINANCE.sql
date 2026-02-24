@@ -1,0 +1,11 @@
+CREATE DATABASE FINANCE;
+
+CREATE TABLE FINANCE(
+ExpenseID INT PRIMARY KEY,
+ExpenseDescription VARCHAR(300),
+ExpenseStatus VARCHAR(10) CHECK (ExpenseStatus IN('APPROVED', 'PAID', 'REJECTED', 'PENDING')),
+ExpenseDate DATE,
+ExpenseAmount INT
+);
+
+SELECT * FROM FINANCE;
